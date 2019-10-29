@@ -1,0 +1,7 @@
+.carousel-wrapper .grid-list .grid-tile {
+  background-color: #003005;
+}
+.carousel-wrapper .grid-list .grid-tile .img {
+  width: 550px;
+  height: 300px;
+}

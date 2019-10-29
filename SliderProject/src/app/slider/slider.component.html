@@ -1,0 +1,20 @@
+<div class="carousel-wrapper">
+  <mat-grid-list class="grid-list" cols="12" rowHeight="300px">
+    <mat-grid-tile [colspan]="3"></mat-grid-tile>
+    <mat-grid-tile class="grid-tile" (click)="onClickLeft($event)">
+      <p>&larr;</p>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="4" class="grid-tile">
+      <img class="img" [src]="selectedImg.imgURL" alt="img">
+    </mat-grid-tile>
+    <mat-grid-tile class="grid-tile" (click)="onClickRight($event)">
+      <p>&rarr;</p>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="3"></mat-grid-tile>
+    <!-- <mat-grid-tile [colspan]="3" class="grid-tile">
+      <ng-container *ngFor="let pop of imageList">
+        <div class="pops-item"><p>&diams;</p></div>
+      </ng-container>
+    </mat-grid-tile> -->
+  </mat-grid-list>
+</div>
